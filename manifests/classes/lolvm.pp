@@ -20,6 +20,10 @@ samba::server::share {'lustre':
   force_user => 'root',
 }
 
+service { 'nmb':
+  ensure => running,
+  enable => true,
+}
 
 include netatalk
 netatalk::server { 'lustre-export':
