@@ -1,0 +1,3 @@
+lustre:
+  uri: 172.16.91.138:/testfs
+  options: flock
